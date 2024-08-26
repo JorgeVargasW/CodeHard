@@ -27,19 +27,19 @@
             <div class="col-sm-12 col-md-6 col-xl-4">
                 <div class="card bg-transparent">
                     <div class="card-body"> 
-                        <form action="" method="POST">
+                        <form action="{% url 'registerUser' %}" method="POST">
                             {% csrf_token %}
                             <div class="form-group py-1">
-                                <input type="text" class="form-control bg-transparent" placeholder="Your name" maxlength="50" required>
+                                <input type="text" id="name" name="name" class="form-control bg-transparent" placeholder="Your name" maxlength="50" required>
                             </div>
                             <div class="form-group py-1">
-                                <input type="text" class="form-control bg-transparent" placeholder="Email address" maxlength="60" required>
+                                <input type="text" id="email" name="email" class="form-control bg-transparent" placeholder="Email address" maxlength="60" required>
                             </div>
                             <div class="form-group py-1">
-                                <input type="text" class="form-control bg-transparent" placeholder="Phone number" maxlength="50" required>
+                                <input type="text" id="phone_number" name="phone_number" class="form-control bg-transparent" placeholder="Phone number" maxlength="50" required>
                             </div>
                             <div class="form-group py-1">
-                                <textarea class="form-control bg-transparent" placeholder="Tell us about your business" maxlength="250" rows="5" required></textarea>
+                                <textarea id="message" name="message" class="form-control bg-transparent" placeholder="Tell us about your business" maxlength="250" rows="5" required></textarea>
                             </div>                            
                             <div class="form-group py-3">
                                 <button type="submit" class="btn btn-primary btn-block text-white">Get Started</button>
