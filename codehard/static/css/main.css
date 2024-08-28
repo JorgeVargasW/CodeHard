@@ -1,11 +1,6 @@
-
-
-.branding { /* h1 */
+h1{
     color: rgb(0, 0, 0);
-    padding-right: 10%;
-    padding-bottom: 8%;
 }
-.branding2{ /* h2 */
-    padding-right: 40%;
+h2{
+    color: rgb(0, 0, 0);
 }
-

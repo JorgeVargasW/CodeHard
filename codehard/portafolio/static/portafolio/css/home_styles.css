@@ -1,5 +1,26 @@
-h2 {
+.row{
+    padding-top: 2.5%;
+}
+
+.branding { /* h1 */
+    font-size: 8vh;
     color: rgb(0, 0, 0);
+    padding-right: 10%;
+    padding-bottom: 8%;
+}
+.branding2{ /* h2 */
+    padding-right: 40%;
+}
+
+
+.card {
+    border: none; /* Removes the border *//* Removes the focus outline */
+}
+
+input.form-control, textarea.form-control{
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 15px;
+
 }
 
 textarea.form-control {
@@ -9,6 +30,6 @@ textarea.form-control {
     box-sizing: border-box; /* Makes sure padding doesn't affect the width */
 }
 
-.card {
-    border: none; /* Removes the border *//* Removes the focus outline */
+button.btn{
+    border-radius: 15px;
 }
